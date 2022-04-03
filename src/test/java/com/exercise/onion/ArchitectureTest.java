@@ -25,7 +25,8 @@ public class ArchitectureTest {
         //Define application package as application service layer
         .applicationServices("com.exercise.onion.application..")
         //Define infrastructure package as infrastructure adapter
-        .adapter("infra", "com.exercise.onion.infrastructure..")
+        .adapter("infra-api", "com.exercise.onion.infrastructure.api..")
+                .adapter("infra-persistence", "com.exercise.onion.infrastructure.data..")
         //Define presentation package as user interface adapter
         //.adapter("ui", "com.exercise.onion.presentation..")
 
