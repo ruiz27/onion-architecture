@@ -1,4 +1,4 @@
-package com.exercise.onion.domain.service;
+package com.exercise.onion.domain.service.accounts;
 
 import org.springframework.stereotype.Service;
 
@@ -11,8 +11,9 @@ public class AccountServiceImpl implements AccountService {
         this.accountRepository = accountRepository;
     }
 
+
     @Override
-    public void sendMessage() {
+    public void saveAccount() {
 
     }
 }

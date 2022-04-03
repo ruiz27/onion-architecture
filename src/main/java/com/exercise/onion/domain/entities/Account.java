@@ -1,4 +1,4 @@
-package com.exercise.onion.domain.model;
+package com.exercise.onion.domain.entities;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
