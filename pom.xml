@@ -15,6 +15,7 @@
 	<description>Demo project for Onion Arch With ArchUnit</description>
 	<properties>
 		<java.version>11</java.version>
+		<springfox-version>3.0.0</springfox-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -56,6 +57,22 @@
 			<artifactId>archunit-junit5</artifactId>
 			<version>0.14.1</version>
 			<scope>test</scope>
+		</dependency>
+		<!--SpringFox dependencies -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-oas</artifactId>
+			<version>${springfox-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${springfox-version}</version>
+		</dependency>
+		<!-- Bean Validation API support -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
 		</dependency>
 	</dependencies>
 
