@@ -1,6 +1,6 @@
 package com.exercise.onion.domain.service;
 
-public interface DomainService {
+public interface AccountService {
 
     void sendMessage();
 }

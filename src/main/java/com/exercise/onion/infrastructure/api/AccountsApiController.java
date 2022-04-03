@@ -17,9 +17,9 @@ import java.util.List;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-04-03T16:53:19.490Z[GMT]")
 @RestController
-public class DomainApiController implements DomainApi {
+public class AccountsApiController implements AccountsApi {
 
-    private static final Logger log = LoggerFactory.getLogger(DomainApiController.class);
+    private static final Logger log = LoggerFactory.getLogger(AccountsApiController.class);
 
     public ResponseEntity<List<DomainRequest>> domainGet(@Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "challengeId", required = false) String challengeId) {
 

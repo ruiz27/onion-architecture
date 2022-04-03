@@ -22,7 +22,7 @@ import java.util.List;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-04-03T16:53:19.490Z[GMT]")
 @Validated
-public interface DomainApi {
+public interface AccountsApi {
 
     @Operation(summary = "Returns challenge", description = "", tags = {})
     @ApiResponses(value = {

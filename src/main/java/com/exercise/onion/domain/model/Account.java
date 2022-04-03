@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 
 @Data
-public class Domain {
+public class Account {
     @Id
     private Integer id;
     private String process;
