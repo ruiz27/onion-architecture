@@ -1,4 +1,4 @@
-package com.exercise.onion.application;
+package com.exercise.onion;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
