@@ -1,6 +1,6 @@
 package com.exercise.onion.infrastructure.api;
 
-import com.exercise.onion.infrastructure.api.dto.Domain;
+import com.exercise.onion.domain.dto.DomainRequest;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -21,12 +21,12 @@ public class DomainApiController implements DomainApi {
 
     private static final Logger log = LoggerFactory.getLogger(DomainApiController.class);
 
-    public ResponseEntity<List<Domain>> domainGet(@Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "challengeId", required = false) String challengeId) {
+    public ResponseEntity<List<DomainRequest>> domainGet(@Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "challengeId", required = false) String challengeId) {
 
-        return new ResponseEntity<List<Domain>>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<List<DomainRequest>>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-    public ResponseEntity<Void> domainPost(@Parameter(in = ParameterIn.DEFAULT, description = "", required=true, schema=@Schema()) @Valid @RequestBody List<Domain> body) {
+    public ResponseEntity<Void> domainPost(@Parameter(in = ParameterIn.DEFAULT, description = "", required=true, schema=@Schema()) @Valid @RequestBody List<DomainRequest> body) {
         return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
     }
 

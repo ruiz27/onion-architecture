@@ -1,7 +1,7 @@
 
 package com.exercise.onion.infrastructure.api;
 
-import com.exercise.onion.infrastructure.api.dto.Domain;
+import com.exercise.onion.domain.dto.DomainRequest;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
@@ -26,13 +26,13 @@ public interface DomainApi {
 
     @Operation(summary = "Returns challenge", description = "", tags = {})
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "OK", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = Domain.class)))),
+            @ApiResponse(responseCode = "200", description = "OK", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = DomainRequest.class)))),
 
             @ApiResponse(responseCode = "400", description = "")})
     @RequestMapping(value = "/domain",
             produces = {"application/json"},
             method = RequestMethod.GET)
-    ResponseEntity<List<Domain>> domainGet(@Parameter(in = ParameterIn.QUERY, description = "", schema = @Schema()) @Valid @RequestParam(value = "challengeId", required = false) String challengeId);
+    ResponseEntity<List<DomainRequest>> domainGet(@Parameter(in = ParameterIn.QUERY, description = "", schema = @Schema()) @Valid @RequestParam(value = "challengeId", required = false) String challengeId);
 
 
     @Operation(summary = "Creates a new challenge.", description = "", tags = {})
@@ -43,7 +43,7 @@ public interface DomainApi {
     @RequestMapping(value = "/domain",
             consumes = {"application/json"},
             method = RequestMethod.POST)
-    ResponseEntity<Void> domainPost(@Parameter(in = ParameterIn.DEFAULT, description = "", required = true, schema = @Schema()) @Valid @RequestBody List<Domain> body);
+    ResponseEntity<Void> domainPost(@Parameter(in = ParameterIn.DEFAULT, description = "", required = true, schema = @Schema()) @Valid @RequestBody List<DomainRequest> body);
 
 }
 
