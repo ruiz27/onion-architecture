@@ -1,6 +1,6 @@
 package com.exercise.onion.infrastructure.api;
 
-import com.exercise.onion.domain.dto.DomainRequest;
+import com.exercise.onion.domain.accounts.Account;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -17,16 +17,16 @@ import java.util.List;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-04-03T16:53:19.490Z[GMT]")
 @RestController
-public class DomainApiController implements DomainApi {
+public class AccountsApiController implements AccountsApi {
 
-    private static final Logger log = LoggerFactory.getLogger(DomainApiController.class);
+    private static final Logger log = LoggerFactory.getLogger(AccountsApiController.class);
 
-    public ResponseEntity<List<DomainRequest>> domainGet(@Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "challengeId", required = false) String challengeId) {
+    public ResponseEntity<List<Account>> domainGet(@Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "challengeId", required = false) String challengeId) {
 
-        return new ResponseEntity<List<DomainRequest>>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<List<Account>>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-    public ResponseEntity<Void> domainPost(@Parameter(in = ParameterIn.DEFAULT, description = "", required=true, schema=@Schema()) @Valid @RequestBody List<DomainRequest> body) {
+    public ResponseEntity<Void> domainPost(@Parameter(in = ParameterIn.DEFAULT, description = "", required=true, schema=@Schema()) @Valid @RequestBody List<Account> body) {
         return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
     }
 
