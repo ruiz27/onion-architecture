@@ -1,4 +1,4 @@
-package com.exercise.onion.domain.service.users;
+package com.exercise.onion.application.users;
 
 public class UserServiceImpl implements UserService {
 }
